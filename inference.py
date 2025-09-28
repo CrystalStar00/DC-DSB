@@ -167,7 +167,7 @@ def create_parser():
                            help='whether to use mixed-precision training')
 
     argparser.add_argument('--data', type=str, default='norman', help='dataset')
-    argparser.add_argument('--prior', type=str, default='genepert_train', help='prior distribution')
+    argparser.add_argument('--prior', type=str, default='genepert_test', help='prior distribution')
 
     argparser.add_argument('--exp_name', type=str, default='try', help='name of experiment')
     argparser.add_argument('--ckpt', type=str, default=None, help='checkpoint to load')
