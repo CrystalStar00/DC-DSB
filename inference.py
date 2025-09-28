@@ -8,13 +8,6 @@ from util.evaluate import perturbation_eval, deep_analysis
 from openpyxl import load_workbook
 import pickle
 
-TEST_CELL_TYPE = {
-    'hpoly': ['Endocrine', 'Enterocyte', 'Enterocyte.Progenitor', 'Goblet', 'Stem', 'TA', 'TA.Early', 'Tuft'],
-    'salmonella': ['Endocrine', 'Enterocyte', 'Enterocyte.Progenitor', 'Goblet', 'Stem', 'TA', 'TA.Early', 'Tuft'],
-    'pbmc': ['Megakaryocytes', 'B cells', 'FCGR3A+ Monocytes', 'NK cells']
-}
-
-
 def seed_everything(seed):
     random.seed(seed)
     np.random.seed(seed)
